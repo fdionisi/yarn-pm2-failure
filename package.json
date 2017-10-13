@@ -1,0 +1,17 @@
+{
+  "name": "yarn-pm2-failure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup:end": "node_modules/.bin/pm2 delete all",
+    "setup:start": "node_modules/.bin/pm2 start pm2.json",
+    "setup:stop": "node_modules/.bin/pm2 stop all",
+    "start": "node index.js"
+  },
+  "author": "Federico Dionisi <dionisi.federico@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "pm2": "^2.7.1"
+  }
+}
